@@ -30,7 +30,7 @@ class FTP
     public function downloadCsv()
     {
         if (ftp_get($this->connection, $this->localFile, $this->serverFile, FTP_BINARY)) {
-            echo "Successfully written to".$this->localFile."\n";
+            echo "Successfully written to ".$this->localFile."\n";
         }
         else {
             echo "There was a problem\n";
